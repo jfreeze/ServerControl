@@ -1,0 +1,41 @@
+@import blueprint.sass
+@import blueprint/scaffolding.sass
+@import blueprint/reset.sass
+@import blueprint/fancy_type
+//@import blueprint/grid
+@import blueprint/liquid.sass
+@import control_base.sass
+
++blueprint
++blueprint-scaffolding("body.plain")
+
+body.plain
+  +fancy-type
+
+.mark
+  :border 1px solid #999
+
+.tright
+  :text-align right
+
+.banner-top
+  +banner-top-gradient
+  +top-rounded(16px)
+  :font 2.5em Georgia, "Lucida Grande", "Lucida Sans Unicode", helvetica, verdana, arial, sans-serif
+  :color white
+
+.content-box
+  :padding 0.5em 1em 0.5em 1em
+
+
+
+.floater
+  :float left
+  :height 50%
+  :margin-bottom -15em
+
+.vccontent
+  :clear both
+  :height 30em
+  :position relative
+

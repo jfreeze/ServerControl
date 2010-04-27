@@ -1,0 +1,14 @@
+.prepend-4.span-16.append-4.last
+  %h2= "Control for Server: #{@server_name}"
+
+  %h3 Server Status
+  %p="#{@stats}"
+  %p
+    %pre=#{@mdstats}
+
+.prepend-top.prepend-6.span-18.last
+  %a.button.green{:href => '/reboot/YitIlYup9Guc'} Reboot Server
+
+  %a.button.red{:href => '/shutdown/YitIlYup9Guc'} Shutdown Server
+
+%script{ :src => "/javascripts/rollover.js", :type => "text/javascript" }

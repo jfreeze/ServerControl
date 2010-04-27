@@ -1,0 +1,28 @@
+%html{ :lang => "en" }
+  %head
+    %meta{ :content => "text/html; charset=utf-8", "http-equiv" => "Content-Type" }
+    %title= @title
+    / Framework CSS
+    %link{ :href => "/stylesheets/screen.css", :rel=> "stylesheet", :media => "screen, projection",  :type => "text/css" }
+    %link{ :href => "/stylesheets/print.css", :rel => "stylesheet", :media => "print", :type => "text/css" }
+    %link{ :href => "/stylesheets/buttons.css", :rel=> "stylesheet", :media => "screen, projection",  :type => "text/css" }
+    %link{ :href => "/stylesheets/control.css", :rel=> "stylesheet", :media => "screen, projection",  :type => "text/css" }
+
+    /
+      [if lt IE 8]><link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type=>"text/css"><![if lt IE 8]>
+      [if lt IE 8]><link href="/stylesheets/ie6.css" media="screen, projection" rel="stylesheet" type=>"text/css"><![if lt IE 8]>
+
+    /
+      [if lt IE 7]><script src="http://ie7-js.googlecode.com/svn/version/2.1(beta3)/IE7.js"></script><![endif]
+
+    /
+      [if lt IE 8]><script src="http://ie7-js.googlecode.com/svn/version/2.1(beta3)/IE8.js"></script><![endif]
+      
+    /
+      [if lt IE 9]><script src="http://ie7-js.googlecode.com/svn/version/2.1(beta3)/IE9.js"></script><![endif]
+
+    %script{:type=>"text/javascript", :src=>"#{@js_lib}"}
+
+  %body.plain
+    .container
+      =yield

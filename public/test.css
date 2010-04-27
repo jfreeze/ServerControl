@@ -1,0 +1,4 @@
+.fred {
+background: -webkit-gradient( linear, left top, left bottom, color-stop(0.12, rgb(189,189,189)), color-stop(0.56, rgb(58,203,255)), color-stop(0.02, rgb(247,247,247)));
+background: -moz-linear-gradient( center bottom, rgb(95,242,36) 24%, rgb(124,255,65) 62%)
+}

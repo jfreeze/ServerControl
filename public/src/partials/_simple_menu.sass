@@ -1,0 +1,15 @@
+=simple-link
+  :color = !tpi_black
+  :text-decoration none
+  &:hover
+    :text-decoration underline
+    :color = !tpi_dk_black
+
+=simple_menu
+  +horizontal-list
+  :float right
+  ul
+    :margin 0
+    li
+      a
+        +simple-link

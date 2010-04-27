@@ -1,0 +1,5 @@
+/* line 1, ../../src/partials/aqua_button.sass */
+.aqua { background-color: rgba(60, 132, 198, 0.8); border-top-color: #8ba2c1; border-right-color: #5890bf; border-bottom-color: #4f93ca; border-left-color: #768fa5; -webkit-box-shadow: rgba(66, 140, 240, 0.5) 0px 10px 16px; -moz-box-shadow: rgba(66, 140, 240, 0.5) 0px 10px 16px; background-image: -webkit-gradient(linear, 0% 0%, 0% 90%, from(rgba(28, 91, 155, 0.8)), to(rgba(108, 191, 255, .9))); }
+
+/* line 13, ../../src/partials/aqua_button.sass */
+.button { width: 120px; height: 24px; padding: 5px 16px 3px; -webkit-border-radius: 16px; -moz-border-radius: 16px; border: 2px solid #ccc; position: relative; }

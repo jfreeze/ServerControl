@@ -1,0 +1,26 @@
+=horizontal-list-container
+  +reset-box-model
+  +clearfix
+
+=horizontal-list-item(!padding = 4px)
+  +dock-gradient
+  +no-bullet
+  white-space: nowrap
+  +float-left
+  border-left: 1px solid #fff
+  border-right: 1px solid #999
+  border-bottom: 1px solid #aaa
+  padding:
+    left= !padding
+    right= !padding
+  &:first-child, &.first
+    padding-left: 4px
+    border-left: 1px solid #aaa
+  &:lastchild, &.last
+    padding-right: 4px
+    border-right: 1px solid #aaa
+
+=horizontal-list(!padding = 4px)
+  +horizontal-list-container
+  li
+    +horizontal-list-item(!padding)
